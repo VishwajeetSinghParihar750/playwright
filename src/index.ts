@@ -58,16 +58,15 @@ const fun2 = async () => {
     }
   });
 
-  await page.goto(
-    "https://www.amazon.in/s?k=nike+shoes&page=2&xpid=C3wmQJYBzQx3B",
-  );
+  //
   await page.waitForTimeout(60000);
 
   await browser.close();
 };
+
 const main = async () => {
-  // await fun1();
-  await fun2();
+  await fun1();
+  // await fun2();
 };
 
 main();
